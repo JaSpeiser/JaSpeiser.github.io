@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 20px;
+}
+
+.text {
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridcontainer {
+    display: grid;
+}
+
+.left-half {
+    grid-column: 1;
+    border-right: 1px solid black;
+}
+
+.right-half {
+    grid-column: 2;
+    border-left: 1px solid black;
+}
+
+.cenp {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: #989572;
+    color: black;
+}
+
+table tr:nth-child(even) {
+    background-color: #c6ae82;
+}
+
+th, thead > tr > td{
+    background-color: black;
+    color: #fff; }
+
+body {
+    background-color: #6A8E7F;
+}
+
+nav {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+}
+
+.warning {
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+ol {
+    margin: 0 auto;
+    display: block;
+}

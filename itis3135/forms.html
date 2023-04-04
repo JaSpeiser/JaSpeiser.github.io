@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ITIS-3135 &#9830; Jake Speiser's Jargon Seal &#9830; Home</title>
+    <title>ITIS-3135 &#9830; Jake Speiser's Jargon Seal &#9830; Forms</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 
@@ -57,7 +57,45 @@
 </header>
     <main>
 
-        <p>This is my home page. There is nothing here. Go to other pages.</p>
+        <h2>Forms</h2>
+        <form action="#">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Ex. John Doe"><br>
+            <label for="pnum">Phone Number:</label><br>
+            <input type="text" id="pnum" name="pnum" required placeholder="Ex. 123-456-7890"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Ex. johndoe@example.com" size="50"><br>
+
+            <label for="pet1">Pet: </label>
+            <input type="checkbox" id="pet1" name="pet1" value="Dog">
+            <label for="pet1">I have a dog</label>
+            <input type="checkbox" id="pet2" name="pet2" value="Cat">
+            <label for="pet2">I have a cat</label>
+            <input type="checkbox" id="pet3" name="pet3" value="Other">
+            <label for="pet3">Other</label><br>
+
+            <div>
+            <label for="0-18">Age: </label>
+            <input type="radio" id="0-18" name="age" value="0-18">
+            <label for="0-18" class="button">0-18</label>
+            <input type="radio" id="19-50" name="age" value="19-50">
+            <label for="19-50" class="button">19-50</label>
+            <input type="radio" id="50+" name="age" value="50+">
+            <label for="50+" class="button">50+</label><br>
+            </div>
+
+            <label for="gsys">Favorite Gaming System:</label>
+
+            <select name="gsys" id="gsys">
+                <option value="PC">PC</option>
+                <option value="Xbox">Xbox</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <input type="reset">
+            <input type="submit" value="Submit">
+        </form>
 
     </main>
 
@@ -73,10 +111,10 @@
     </nav>
     <p>Page built by <a href="speiser.services/index.html">Speiser Services</a></p>
     <p class="valbutton">
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Findex.html">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Fforms.html">
             <img class="valbutton" style="border:0;width:88px;height:31px" src="images/button-valid-html5.gif"  alt="Link to HTML validator">
         </a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Fforms.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
             <img class="valbutton" style="border:0;width:88px;height:31px"
                  src="images/button-valid-css.gif"
                  alt="Valid CSS!" />

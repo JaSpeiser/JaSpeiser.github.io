@@ -1,0 +1,125 @@
+body {
+background-color: Bisque;
+color: #362417;
+font-family: 'Mukta', sans-serif;
+}
+
+header, footer {
+text-align: center;
+}
+
+h1, h2, h3 {
+color: #362417;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+font-size: 30px;
+}
+
+p {
+text-align: center;
+font-size: 20px;
+}
+
+ul, ol {
+margin-left: 20%;
+margin-right: 20%;
+font-size: 20px;
+list-style-position: inside;
+}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
+
+.sublist {
+margin-left: 0px;
+}
+
+.caption {
+text-align: center;
+font-style: italic;
+}
+
+nav {
+text-align: center;
+}
+
+.valbutton{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+}
+
+
+table, th, td {
+border: 1px solid black;
+text-align: center;
+}
+
+table tr:nth-child(odd) {
+background-color: #777;
+color: #fff; }
+
+th, thead > tr > td{
+    background-color: black;
+    color: #fff; }
+
+figcaption {
+font-style: italic;
+text-align: center;
+}
+
+.tabdat {
+margin-left: 20%;
+margin-right: 20%;
+font-size: 20px;
+text-align: center;
+list-style-position: inside;
+}
+
+input[type="radio"], label[for="0-18"], label[for="19-50"], label[for="50+"] {
+accent-color: black;
+mix-blend-mode: multiply;
+background-color: black;
+color: white;
+}
+
+form {
+font-family: 'Inconsolata', monospace;
+font-size: 20px;
+text-align: center;
+}
+
+input[type="text"], input[type="email"] {
+border-color: black;
+}
+
+a, a:link {
+  color: #362417;
+}
+
+a:visited {
+ color: #7a503c;
+}
+
+a:hover {
+ color: gray;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#slides ul {
+    list-style-type: none;
+    padding: 0;
+}

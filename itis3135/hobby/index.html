@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        section {
+            display: none;
+        }
+        body {
+            background-color:  #72bf6a;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Alkatra', cursive;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Anton';
+            text-decoration-line: underline;
+        }
+        figcaption {
+            font-style: italic;
+        }
+        nav {
+            text-align: center;
+        }
+        a {
+            color: black;
+            font-family: 'Teko', sans-serif;
+        }
+        p {
+            text-align: center;
+        }
+        figure {
+            text-align: center;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #777;
+            color: #fff; }
+
+        th, thead > tr > td{
+            background-color: black;
+            color: #fff; }
+        ul {
+            text-align: center;
+        }
+        #home {
+            display: block;
+        }
+    </style>
+    <script src="scripts/hobby.js"></script>
+    <title>Hobby</title>
+</head>
+<body>
+
+<header>
+<nav>
+    <p>
+    <a href="javascript:setVisible('home')" onclick="preventDefault">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="javascript:setVisible('about')" onclick="preventDefault">ABOUT ME</a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="javascript:setVisible('schedule')" onclick="preventDefault">SCHEDULE</a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="javascript:setVisible('locations')" onclick="preventDefault">LOCATIONS</a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="javascript:setVisible('how')" onclick="preventDefault">HOW</a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="javascript:setVisible('why')" onclick="preventDefault">WHY</a>
+    </p>
+</nav>
+</header>
+<hr>
+<main>
+
+    <h1>Bird Watching</h1>
+    <hr>
+<section class="sctn" id="about">
+    <h2>About Me</h2>
+    <p>My name is Jake Speiser. I am a 19 year old sophomore at UNCC studying computer science with a concentration in cyber security. I have 1 dog, 1 cat, and 6 chickens.</p>
+    <p>I am also an avid bird watcher. I first started bird watching yesterday when a cardinal slammed into my window 5 times and I have been in love with it ever since.</p>
+    <figure>
+        <img src="images/dumbcardinal.jpg" alt="dumb bird">
+        <figcaption>This is the stupid idiot cardinal that flew into my window 5 times</figcaption>
+    </figure>
+    </section>
+
+<section class="sctn" id="home">
+    <h2>Home</h2>
+    <p>Welcome to the home page of my bird watching website! If you landed here it's because you clicked on a link!</p>
+    <p>Take a look around. We have an about me page, a home page (this one), a schedule page, a locations page, a how page, and a why page!</p>
+    <figure>
+        <img src="images/welcomebirds.png" alt="birds">
+        <figcaption>Here are some birds you can watch to get you warmed up</figcaption>
+    </figure>
+    </section>
+
+<section class="sctn" id="schedule">
+    <h2>Schedule</h2>
+    <p>Welcome to the schedule page! This is where you can find out what days of the week there will be birds outside!</p>
+    <figure>
+        <img src="images/daysofweek.jpg" alt="weekdays">
+        <figcaption>Here are the days of the week in order in case you forgot</figcaption>
+    </figure>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Will there be birds?</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Yes!</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Yes!</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Yes!</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Yes!</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Yes!</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Yes!</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>No.</td>
+        </tr>
+    </table>
+    </section>
+
+<section class="sctn" id="locations">
+    <h2>Locations</h2>
+    <p>These are the 5 cities where birds are known to show up</p>
+    <ul>
+        <li>North Carolina</li>
+        <li>South Carolina</li>
+        <li>California</li>
+        <li>New York</li>
+        <li>Maine</li>
+    </ul>
+    <figure>
+        <img src="images/birdworld.jpg" alt="bird on the globe">
+        <figcaption>An eagle standing on top of Earth</figcaption>
+    </figure>
+    </section>
+
+<section class="sctn" id="how">
+    <h2>How</h2>
+    <p>If you're here it's because you want to know how to watch birds. Read the next paragraph for further information.</p>
+    <p>The best way to watch birds is with your eyes. Some people use binoculars to help see even further with their eyes but they are not required.</p>
+    <figure>
+        <img src="images/binos.jpg" alt="binoculars">
+        <figcaption>A person using binoculars</figcaption>
+    </figure>
+    </section>
+
+<section class="sctn" id="why">
+    <h2>Why</h2>
+    <p>Why should you watch birds? Well, I'm glad you asked!</p>
+    <p>There are many reasons to watch birds, including but not limited to:</p>
+    <ul>
+        <li>They are funny</li>
+        <li>They are cute</li>
+        <li>They look cool</li>
+    </ul>
+    <figure>
+        <img src="images/goofybirds.jpg" alt="goofy birds">
+        <figcaption>Two birds being goofy and silly</figcaption>
+    </figure>
+    </section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>Page built by <a href="https://webpages.charlotte.edu/jspeiser/itis3135/speiser.services/index.html">Speiser Services</a></p>
+    <p class="valbutton">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Fhobby%2Findex.html">
+            <img class="valbutton" style="border:0;width:88px;height:31px" src="images/button-valid-html5.gif"  alt="Link to HTML validator">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Fhobby%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img class="valbutton" style="border:0;width:88px;height:31px"
+                 src="images/button-valid-css.gif"
+                 alt="Valid CSS!" />
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>

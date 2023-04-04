@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Board Game Night | Signup</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Sign Up</h1>
+    <hr>
+    <nav>
+        <a href="index.html">Home</a> ||||||
+        <a href="rules.html">Rules</a> ||||||
+        <a href="previous.html">Previous Events</a> ||||||
+        <a href="games.html">Games</a> ||||||
+        <a href="signup.html">Sign-up</a>
+    </nav>
+    <hr>
+</header>
+
+<main>
+
+    <form>
+        Name: <input type="text" name="newName" id="newName" placeholder="I.E. John Doe">
+        Email: <input type="email" name="newEmail" id="newEmail" placeholder="example@example.com">
+        Phone: <input type="tel" name="newPhone" id="newPhone" placeholder="XXX-XXX-XXXX">
+    </form>
+    <button onclick="addPerson(newName, newEmail, newPhone)">Submit</button>
+
+    <p>Please fill out the above form to sign up for the next Board Game Night event. Current participants are listed in table below.</p>
+
+    <table id="results_table" class="results_table">
+    </table>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>

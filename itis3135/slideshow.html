@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ITIS-3135 &#9830; Jake Speiser's Jargon Seal &#9830; Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            let pics = ["images/seal1.jpg", "images/seal2.jpg", "images/seal3.jpg", "images/seal4.jpg", "images/seal5.jpg", "images/seal6.jpg"];
+
+            let count = pics.length;
+            let cur = 1;
+
+            let $imgs = new Array();
+            for (let i = 0; i < count; i++) {
+                $imgs.push($('<img>').attr('src', pics[i]));
+            }
+
+            $("#slides").append("<ul>");
+
+            for (let i = 0; i < count; i++) {
+                let $li = $("<li>").append($imgs[i]);
+                $("#slides ul").append($li);
+            }
+
+            $("#slides ul li").hide();
+
+            $("#slide1link").click(function(e) {
+                e.preventDefault();
+                $("#slides ul li").hide();
+                $("#slides ul li").eq(0).show();
+            });
+
+            $("#slide2link").click(function(e) {
+                e.preventDefault();
+                $("#slides ul li").hide();
+                $("#slides ul li").eq(1).show();
+            });
+
+            $("#slide3link").click(function(e) {
+                e.preventDefault();
+                $("#slides ul li").hide();
+                $("#slides ul li").eq(2).show();
+            });
+
+            $("#slide4link").click(function(e) {
+                e.preventDefault();
+                $("#slides ul li").hide();
+                $("#slides ul li").eq(3).show();
+            });
+
+            $("#slide5link").click(function(e) {
+                e.preventDefault();
+                $("#slides ul li").hide();
+                $("#slides ul li").eq(4).show();
+            });
+
+            $("#slide6link").click(function(e) {
+                e.preventDefault();
+                $("#slides ul li").hide();
+                $("#slides ul li").eq(5).show();
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <h1>ITIS-3135 | Jake Speiser</h1>
+    <nav>
+        <a class="links" href="index.html">Home</a>
+        ||
+        <a href="introduction.html">Introduction</a>
+        ||
+        <a href="contract.html">Contract</a>
+        ||
+        <a href="tables.html">Tables</a>
+        ||
+        <a href="forms.html">Forms</a>
+        ||
+        <a href="website_evaluations.html">Website Evaluation</a>
+        ||
+        <a href="firstscripts.html">First Scripts</a>
+        ||
+        <a href="polygons.html">Polygons</a>
+        ||
+        <a href="calculator.html">Calculator</a>
+        ||
+        <a href="arrays.html">Arrays</a>
+        ||
+        <a href="slideshow.html">Slideshow</a>
+        ||
+        <a href="https://webpages.charlotte.edu/jspeiser/">UNCC Home</a>
+
+        <hr>
+
+        <h1>Standalone Sites</h1>
+        <a href="stuff/B35T F!L3N2me ever.htm">Crap Website</a>
+        ||
+        <a href="speiser.services/index.html">Speiser Services</a>
+        ||
+        <a href="Accessibility/Speiser-Activity_Accessibility.html">Accessibility</a>
+        ||
+        <a href="project_1.html">Project Design Document</a>
+        ||
+        <a href="hobby/index.html">Hobby Site</a>
+        ||
+        <a href="project/index.html">Project</a>
+
+    </nav>
+    <hr>
+</header>
+<main>
+
+    <nav>
+    <a href="" id="slide1link">Slide 1</a>
+    <a href="" id="slide2link">Slide 2</a>
+    <a href="" id="slide3link">Slide 3</a>
+    <a href="" id="slide4link">Slide 4</a>
+    <a href="" id="slide5link">Slide 5</a>
+    <a href="" id="slide6link">Slide 6</a>
+    </nav>
+
+    <br>
+    <br>
+
+    <div id="slides"></div>
+
+</main>
+
+<footer>
+    <hr>
+    <nav>
+        <a href="https://webpages.charlotte.edu/jspeiser/" target="_blank">Charlotte.edu</a> &#9553;
+        <a href="https://github.com/jaspeiser/" target="_blank">Github</a> &#9553;
+        <a href="https://jaspeiser.github.io/itis3135/" target="_blank">ITIS 3135 Github Page</a> &#9553;
+        <a href="https://www.codecademy.com/profiles/blog6937743795" target="_blank">Codecademy</a> &#9553;
+        <a href="https://www.freecodecamp.org/fcc12941b8a-1be8-4d76-a731-1aef837c62b8" target="_blank">freeCodeCamp</a> &#9553;
+        <a href="https://www.linkedin.com/in/dice-master-2140b5223/" target="_blank">LinkedIn</a>
+    </nav>
+    <p>Page built by <a href="speiser.services/index.html">Speiser Services</a></p>
+    <p class="valbutton">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Fslideshow.html">
+            <img class="valbutton" style="border:0;width:88px;height:31px" src="images/button-valid-html5.gif"  alt="Link to HTML validator">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fjspeiser%2Fitis3135%2Fslideshow.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img class="valbutton" style="border:0;width:88px;height:31px"
+                 src="images/button-valid-css.gif"
+                 alt="Valid CSS!" />
+        </a>
+    </p>
+</footer>
+</body>
+
+</html>
