@@ -8,6 +8,16 @@
     <title>Board Game Night | Signup</title>
     <link rel="stylesheet" href="project.css">
     <script src="project.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="exporttable/src/jquery.table2excel.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( document ).tooltip();
+        } );
+    </script>
 </head>
 <body>
 
@@ -27,14 +37,16 @@
 <main>
 
     <form>
-        Name: <input type="text" name="newName" id="newName" placeholder="I.E. John Doe">
-        Email: <input type="email" name="newEmail" id="newEmail" placeholder="example@example.com">
-        Phone: <input type="tel" name="newPhone" id="newPhone" placeholder="XXX-XXX-XXXX">
+        Name: <input type="text" name="newName" id="newName" placeholder="I.E. John Doe" title="Name must be unique from current entries">
+        Email: <input type="email" name="newEmail" id="newEmail" placeholder="example@example.com" title="Must be a valid email address including '@' symbol and domain">
+        Phone: <input type="tel" name="newPhone" id="newPhone" placeholder="XXX-XXX-XXXX" title="Must include dashes and follow XXX-XXX-XXXX format">
     </form>
     <button onclick="addPerson(newName, newEmail, newPhone)">Submit</button>
 
-    <p>Please fill out the above form to sign up for the next Board Game Night event. Current participants are listed in table below.</p>
 
+    <p>Please fill out the above form to sign up for the next Board Game Night event. Current participants are listed in table below.</p>
+    <button id="xlsport">Export current table to Excel</button>
+    <br>
     <table id="results_table" class="results_table">
     </table>
 </main>
@@ -42,6 +54,18 @@
 <footer>
 
 </footer>
+
+<script type="text/javascript">
+    $("#xlsport").click(function(){
+        $("#results_table").table2excel({
+            // exclude CSS class
+            exclude: ".noExl",
+            name: "Worksheet Name",
+            filename: "BGNSignups", //do not include extension
+            fileext: ".xls" // file extension
+        });
+    });
+</script>
 
 </body>
 </html>

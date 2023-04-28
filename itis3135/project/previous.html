@@ -5,13 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Board Game Night | Previous Events</title>
+    <title>Board Game Night | Home</title>
+    <link rel="stylesheet" href="slickstuff/slick/slick.css">
+    <link rel="stylesheet" href="slickstuff/slick/slick-theme.css">
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
 
 <header>
-    <h1>Previous Events</h1>
+    <h1>Board Game Night</h1>
     <hr>
     <nav>
         <a href="index.html">Home</a> ||||||
@@ -24,41 +26,71 @@
 </header>
 
 <main>
-    <div class="container">
-        <p class="text">During the first meeting of Phoenix Chassin's board game club, the group played the cooperative
-            game Horrified. The players worked together to defeat the various monsters terrorizing their town. After a
-            tense game, the group was victorious, and everyone celebrated their win. The game provided a great
-            opportunity for players to hone their teamwork and problem-solving skills, as well as enjoy a thrilling game.</p>
-        <img src="images/phxhorrified.jpg" alt="Horrified">
-    </div>
-    <div class="container">
-        <img src="images/phxking.jpg" alt="TheKingIsDead">
-        <p class="text">At a recent meeting of Phoenix Chassin's board game club, the group played the strategy game
-            The King is Dead. After a fierce competition, Jake emerged as the victor. His clever strategies and quick
-            thinking earned him the admiration of the other players. The game provided an excellent opportunity for the
-            players to test their strategic skills and compete against each other in a friendly atmosphere.</p>
-    </div>
-    <div class="container">
-        <p class="text">At a recent meeting of Phoenix Chassin's board game club, the group played the challenging game
-            Sidereal Confluence. The game requires players to trade resources, negotiate with other players, and manage
-            their civilization's economy. After a long and tense game, Aaran emerged as the winner, impressing everyone
-            with his strategic skills and ability to make tough decisions. The game provided an excellent opportunity
-            for players to test their negotiation and strategic skills, as well as enjoy a challenging and engaging game.</p>
-        <img src="images/phxsidereal.jpg" alt="SiderealConfluence">
-    </div>
-    <div class="container">
-        <img src="images/phxtiny.jpg" alt="TinyEpicMechs">
-        <p class="text">In the most recent meeting of Phoenix Chassin's board game club, the group played the exciting
-            game Tiny Epic Mechs. The players controlled miniature robots, competing against each other in a futuristic
-            arena. Phoenix emerged as the winner, demonstrating impressive tactical skills and quick reflexes. The game
-            was a great opportunity for the players to engage in friendly competition and have fun while honing their
-            strategic abilities.</p>
-    </div>
+
+    <section class="regular slider">
+        <div>
+            <div class="container">
+                <img src="images/phxhorrified.jpg" alt="Horrified">
+                <p class="textl">During the first meeting of Phoenix Chassin's board game club, the group played the cooperative
+                    game Horrified. The players worked together to defeat the various monsters terrorizing their town. After a
+                    tense game, the group was victorious, and everyone celebrated their win. The game provided a great
+                    opportunity for players to hone their teamwork and problem-solving skills, as well as enjoy a thrilling game.</p>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <img src="images/phxking.jpg" alt="TheKingIsDead">
+                <p class="textl">At a recent meeting of Phoenix Chassin's board game club, the group played the strategy game
+                    The King is Dead. After a fierce competition, Jake emerged as the victor. His clever strategies and quick
+                    thinking earned him the admiration of the other players. The game provided an excellent opportunity for the
+                    players to test their strategic skills and compete against each other in a friendly atmosphere.</p>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <img src="images/phxsidereal.jpg" alt="SiderealConfluence">
+                <p class="textl">At a recent meeting of Phoenix Chassin's board game club, the group played the challenging game
+                    Sidereal Confluence. The game requires players to trade resources, negotiate with other players, and manage
+                    their civilization's economy. After a long and tense game, Aaran emerged as the winner, impressing everyone
+                    with his strategic skills and ability to make tough decisions. The game provided an excellent opportunity
+                    for players to test their negotiation and strategic skills, as well as enjoy a challenging and engaging game.</p>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <img src="images/phxtiny.jpg" alt="TinyEpicMechs">
+                <p class="textl">In the most recent meeting of Phoenix Chassin's board game club, the group played the exciting
+                    game Tiny Epic Mechs. The players controlled miniature robots, competing against each other in a futuristic
+                    arena. Phoenix emerged as the winner, demonstrating impressive tactical skills and quick reflexes. The game
+                    was a great opportunity for the players to engage in friendly competition and have fun while honing their
+                    strategic abilities.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
 </main>
 
 <footer>
 
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+<script src="slickstuff/slick/slick.js?v2022" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+        });
+    });
+</script>
 </body>
 </html>

@@ -10,7 +10,14 @@ img {
     padding: 20px;
 }
 
-.text {
+.textl {
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+
+.textc {
     font-size: 30px;
     padding-left: 20px;
     font-family: 'Josefin Sans', sans-serif;
@@ -100,3 +107,9 @@ ol {
     margin: 0 auto;
     display: block;
 }
+
+.regular slider {
+    width: 100%;
+    margin: 50px auto;
+}
+
